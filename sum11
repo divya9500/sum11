@@ -1,0 +1,25 @@
+#Write a class and override "toString" method in the class object.
+package Assesement2;
+
+public class OverrideToString {
+    String name;
+    int id;
+    OverrideToString(String n,int i){
+        id=i;
+        name=n;
+    }
+    public static void main(String args[]){
+        Character c='a';
+        System.out.println(c);
+        String n=new String("Divya");
+        System.out.println(n);
+        Integer i=24;
+        System.out.println(i);
+        OverrideToString o=new OverrideToString(n,i);
+        System.out.println(o);
+    }
+    @Override
+    public String toString(){
+        return name+" "+id;
+    }
+}
